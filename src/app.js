@@ -17,10 +17,10 @@ function realTime(date) {
   return ` ${hours}:${minutes} minutes`;
 }
 
-let dateElement = document.querySelector("#currentDay");
+let dateElement = document.querySelector("#current-day");
 let currentDate = new Date();
 dateElement.innerHTML = realDate(currentDate);
-let timeElement = document.querySelector("#currentTimeUTC");
+let timeElement = document.querySelector("#current-time");
 let currentTime = new Date();
 
 timeElement.innerHTML = realTime(currentTime);
